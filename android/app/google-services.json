@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "245080076899",
+    "project_id": "reservateco",
+    "storage_bucket": "reservateco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245080076899:android:84183d0f58f6a46c2e3e56",
+        "android_client_info": {
+          "package_name": "com.teco.reservateco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245080076899-54t9d961aovu0bbrr2sqhhsi2vu786ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teco.reservateco",
+            "certificate_hash": "cc5c5cdedd8702353044adc4f0179eacae89c5ee"
+          }
+        },
+        {
+          "client_id": "245080076899-18ul62d9t74l2uavpusvdon10310gfid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqT3em1iM4DITJCQXygUL93yJeu709-5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245080076899-18ul62d9t74l2uavpusvdon10310gfid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
