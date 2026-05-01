@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue, brightness: Brightness.light),
       darkTheme: ThemeData(primarySwatch: Colors.blue, brightness: Brightness.dark),
       themeMode: ThemeMode.system,
-      home: LoginScreen(),
+      home: PrepararReservaScreen(userName: 'Invitado', user: null),
     );
   }
 }

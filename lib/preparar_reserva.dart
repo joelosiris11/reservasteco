@@ -8,9 +8,9 @@ import 'package:google_sign_in/google_sign_in.dart'; // Importa GoogleSignIn
 
 class PrepararReservaScreen extends StatefulWidget {
   final String userName; // Añadir el parámetro userName
-  final GoogleSignInAccount user; // Añadir el parámetro user
+  final GoogleSignInAccount? user; // Añadir el parámetro user
 
-  const PrepararReservaScreen({Key? key, required this.userName, required this.user}) : super(key: key);
+  const PrepararReservaScreen({Key? key, required this.userName, this.user}) : super(key: key);
 
   @override
   _PrepararReservaScreenState createState() => _PrepararReservaScreenState();

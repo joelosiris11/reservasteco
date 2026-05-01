@@ -7,9 +7,9 @@ import 'package:qr_flutter/qr_flutter.dart';
 import 'package:intl/intl.dart'; // Importar para el formato de fecha
 
 class ReservationList extends StatefulWidget {
-  final GoogleSignInAccount user; // Usuario autenticado
+  final GoogleSignInAccount? user; // Usuario autenticado
 
-  const ReservationList({Key? key, required this.user}) : super(key: key);
+  const ReservationList({Key? key, this.user}) : super(key: key);
 
   @override
   _ReservationListState createState() => _ReservationListState();
@@ -26,8 +26,9 @@ class _ReservationListState extends State<ReservationList> {
   }
 
   Future<void> _fetchEvents() async {
+    if (widget.user == null) return;
     try {
-      final auth = await widget.user.authentication;
+      final auth = await widget.user!.authentication;
       final client = http.Client();
       final credentials = AccessCredentials(
         AccessToken('Bearer', auth.accessToken!, DateTime.now().toUtc().add(Duration(seconds: 3600))),
